@@ -1,0 +1,8 @@
+@import "tailwindcss";
+.box {
+    --mask: 
+      linear-gradient(0deg,#0000 60px,#000 0) 0 30px,
+      radial-gradient(30px,#000 98%,#0000) 50%/55.5px 60px repeat space;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+  }
