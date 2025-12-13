@@ -8,8 +8,6 @@ const categories = [
   "Plastic",
   "Metal",
   "E-Waste",
-  "Appliances",
-  "Glass",
   "Others",
 ];
 

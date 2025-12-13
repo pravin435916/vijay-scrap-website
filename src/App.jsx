@@ -13,6 +13,7 @@ import ScrapRatePage from './pages/ScrapRatePage'
 import KabadiWalaHomepage from './components/KabadiWalaHomepage'
 import AboutPage from './components/About'
 import Footer from './components/Footer'
+import ServicesPage from './pages/ServicesPage'
 function App() {
   return (
     <BrowserRouter>
@@ -27,6 +28,7 @@ function App() {
         <Route path='/offers' element={<Offers />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/about' element={<AboutPage />} />
+        <Route path='/services' element={<ServicesPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

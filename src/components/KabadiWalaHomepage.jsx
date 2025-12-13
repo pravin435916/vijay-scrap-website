@@ -16,7 +16,7 @@ import {
   Youtube,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-
+import { process } from "../pages/ServicesPage";
 const KabadiWalaHomepage = () => {
   return (
     <div className="min-h-screen bg-white w-full overflow-hidden">
@@ -34,10 +34,12 @@ const KabadiWalaHomepage = () => {
                 instant payment and contribute to a greener planet.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
+                <Link to="/contact">
                 <button className="bg-green-600 text-white px-8 py-4 rounded-full hover:bg-green-700 transition-colors font-medium text-lg flex items-center justify-center">
                   Schedule Pickup
                   <ChevronRight className="ml-2 w-5 h-5" />
                 </button>
+                </Link>
                 <Link to="/scrap-rates">
                   <button className="border-2 cursor-pointer border-green-600 text-green-600 px-8 py-4 rounded-full hover:bg-green-50 transition-colors font-medium text-lg">
                     Check Scrap Rates
@@ -126,54 +128,38 @@ const KabadiWalaHomepage = () => {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               How It Works
             </h2>
             <p className="text-lg text-gray-600">
-              Simple 3-step process to sell your scrap
+              Simple 4-step process to sell your scrap
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl mb-4">
-                1
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Schedule Pickup
-              </h3>
-              <p className="text-gray-600">
-                Book online or call us. Choose date and time slot convenient for
-                you.
-              </p>
-            </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {process.map((item, index) => (
+              <div key={index} className="relative">
+                {index < process.length - 1 && (
+                  <div className="hidden lg:block absolute top-12 left-1/2 w-full h-0.5 bg-green-200 -z-10" />
+                )}
 
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl mb-4">
-                2
+                <div className="text-center">
+                  <div className="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-2xl relative z-10">
+                    {item.step}
+                  </div>
+                  <div className="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-green-600">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm">{item.description}</p>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                We Collect
-              </h3>
-              <p className="text-gray-600">
-                Our team arrives at your doorstep with digital weighing scale.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl mb-4">
-                3
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Get Paid
-              </h3>
-              <p className="text-gray-600">
-                Receive instant payment via your preferred payment method.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -190,14 +176,12 @@ const KabadiWalaHomepage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          <div className="flex items-center justify-center sm:flex-row flex-col  gap-6">
             {[
               { name: "Paper", img: "/scrap/books.jpg" },
               { name: "Plastic", img: "/scrap/plastic.jpg" },
               { name: "Metal", img: "/scrap/pipa.jpg" },
-              { name: "E-Waste", img: "/scrap/ewaste.jpg" },
-              { name: "Glass", img: "/scrap/glass.jpg" },
-              { name: "Appliances", img: "/scrap/appliances.jpg" },
+              { name: "E-Waste", img: "/scrap/washing_machine.jpg" },
             ].map((category) => (
               <div
                 key={category.name}

@@ -50,9 +50,11 @@ export const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
+            <Link to='/contact'>
             <button className="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition-colors font-medium">
               Schedule Pickup
             </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -102,9 +104,11 @@ export const Navbar = () => {
               >
                 Contact
               </Link>
+              <Link to='/contact'>
               <button className="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition-colors font-medium w-full">
                 Schedule Pickup
               </button>
+              </Link>
             </nav>
           </div>
         )}
