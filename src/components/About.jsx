@@ -40,7 +40,7 @@ const AboutPage = () => {
                 Our Story
               </h2>
               <p className="text-gray-600 mb-4">
-                Founded in 2020, Vijay Kabadi Wala emerged from a simple
+                Founded in 2020, Vijay KabadiWala emerged from a simple
                 observation: traditional scrap collection was inconvenient,
                 unreliable, and often undervalued people's recyclables. We set
                 out to change that.
@@ -57,8 +57,11 @@ const AboutPage = () => {
                 to create a sustainable future for all.
               </p>
             </div>
-            <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-              <span className="text-gray-400">Story Image Space</span>
+            <div className="sm:h-96 h-54 flex items-center justify-center">
+              <img
+                src="/logos/logo-t.png"
+                className="object-cover sm:w-232 w-96"
+              />
             </div>
           </div>
         </div>
@@ -211,21 +214,21 @@ const AboutPage = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold mb-2">50,000+</div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">5000+</div>
               <div className="text-green-100">Happy Customers</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold mb-2">500+</div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">50+</div>
               <div className="text-green-100">Tons Recycled</div>
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold mb-2">
-                100,000+
+                1,000+
               </div>
               <div className="text-green-100">Pickups Completed</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold mb-2">50+</div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">2+</div>
               <div className="text-green-100">Cities Covered</div>
             </div>
           </div>

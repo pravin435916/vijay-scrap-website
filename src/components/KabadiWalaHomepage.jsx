@@ -19,41 +19,45 @@ import { Link } from "react-router-dom";
 import { process } from "../pages/ServicesPage";
 const KabadiWalaHomepage = () => {
   return (
-    <div className="min-h-screen bg-white w-full overflow-hidden">
+    <div className="sm:min-h-screen h-full bg-white w-full overflow-hidden">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br overflow-hidden h-[90vh] from-green-50 to-blue-50 py-20">
+      <section className="bg-linear-to-br overflow-hidden h-full sm:h-[90vh] from-green-50 to-blue-50 py-4 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center flex-col-reverse sm:flex-row sm:gap-12 gap-8 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Sell Your Scrap at Best Prices with
+                Vijay Kabadiwala provides - Sell Your Scrap at Best Prices with
                 <span className="text-green-600"> Free Doorstep Pickup</span>
               </h1>
               <p className="text-lg text-gray-600 mb-8">
-                India's most trusted online scrap collection service. Get
+                Vijay kabadiwala is India's most trusted online scrap collection service. Get
                 instant payment and contribute to a greener planet.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex  gap-4">
                 <Link to="/contact">
-                <button className="bg-green-600 text-white px-8 py-4 rounded-full hover:bg-green-700 transition-colors font-medium text-lg flex items-center justify-center">
+                <button className="bg-green-600 text-white sm:px-8 sm:py-4 py-2 px-4 rounded-full hover:bg-green-700 transition-colors font-medium sm:text-lg text-sm flex items-center justify-center">
                   Schedule Pickup
                   <ChevronRight className="ml-2 w-5 h-5" />
                 </button>
                 </Link>
                 <Link to="/scrap-rates">
-                  <button className="border-2 cursor-pointer border-green-600 text-green-600 px-8 py-4 rounded-full hover:bg-green-50 transition-colors font-medium text-lg">
+                  <button className="border-2 cursor-pointer border-green-600 text-green-600 sm:px-8 sm:py-4 py-2 px-4 rounded-full hover:bg-green-50 transition-colors font-medium sm:text-lg text-sm">
                     Check Scrap Rates
                   </button>
                 </Link>
               </div>
               {/* add one line and inline button type something for industrial pickup schedule also available call now  */}
-              <div className="mt-6 text-sm text-gray-500">
-                <span className="text-xl">Looking for Industrial Pickup? </span>
+               <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
+                <span className="text-lg sm:text-xl font-semibold text-gray-700">
+                  Looking for <span className="text-green-700">Industrial Pickup</span>?
+                </span>
                 <a
-                  href="tel:+919876543210"
-                  className="text-green-600 text-xl font-medium ml-1 hover:underline"
+                  href="tel:+917397889691"
+                  className="inline-flex items-center bg-gradient-to-r from-green-600 to-blue-600 text-white px-6 py-3 rounded-full shadow-lg font-semibold text-lg hover:from-green-700 hover:to-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-green-400"
+                  style={{ boxShadow: "0 4px 20px 0 rgba(34,197,94,0.15)" }}
                 >
-                  Call Now
+                  <Phone className="w-5 h-5 mr-2" />
+                  Industrial Pickup – Call Now
                 </a>
               </div>
             </div>
