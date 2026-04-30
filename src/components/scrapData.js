@@ -13,13 +13,13 @@ export const scrapData = [
   { id: 9, name: 'Milk cover', category: 'Plastic', rate: 5, unit: 'kg', image: '/scrap/milk_cover.jpg' },
   
   // Metal Category
-  { id: 10, name: 'Pipa', category: 'Metal', rate: 15, unit: 'kg', image: '/scrap/pipa.jpg' },
-  { id: 11, name: 'Aluminum', category: 'Metal', rate: 115, unit: 'kg', image: '/scrap/aluminium.jpg' },
-  { id: 12, name: 'Aluminum Wire', category: 'Metal', rate: 12, unit: 'kg', image: '/scrap/aluminium_wire.jpg' },
+  { id: 10, name: 'Pipa', category: 'Metal', rate: 20, unit: 'kg', image: '/scrap/pipa.jpg' },
+  { id: 11, name: 'Aluminum', category: 'Metal', rate: 200, unit: 'kg', image: '/scrap/aluminium.jpg' },
+  { id: 12, name: 'Aluminum Wire', category: 'Metal', rate: 52, unit: 'kg', image: '/scrap/aluminium_wire.jpg' },
   { id: 13, name: 'Copper', category: 'Metal', rate: 610, unit: 'kg', image: '/scrap/copper.jpg' },
   { id: 14, name: 'Copper Wire', category: 'Metal', rate: 270, unit: 'kg', image: '/scrap/copper_wire.jpg' },
-  { id: 15, name: 'Copper Burned', category: 'Metal', rate: 510, unit: 'kg', image: '/scrap/copper_wire.jpg' },
-  { id: 16, name: 'Brass', category: 'Metal', rate: 400, unit: 'kg', image: '/scrap/brass.jpg' },
+  { id: 15, name: 'Copper Burned', category: 'Metal', rate: 710, unit: 'kg', image: '/scrap/copper_wire.jpg' },
+  { id: 16, name: 'Brass', category: 'Metal', rate: 550, unit: 'kg', image: '/scrap/brass.jpg' },
   { id: 17, name: 'Steel', category: 'Metal', rate: 40, unit: 'kg', image: '/scrap/steel.jpg' },
   { id: 18, name: 'Iron', category: 'Metal', rate: 25, unit: 'kg', image: '/scrap/iron.jpg' },
 
@@ -30,10 +30,10 @@ export const scrapData = [
   { id: 21, name: 'Mobile Phone(Smart)', category: 'E-Waste', rate: 40, unit: 'kg', image: '/scrap/mobile_phones.jpg' },
   { id: 22, name: 'Keypad Mobile', category: 'E-Waste', rate: 25, unit: 'kg', image: '/scrap/keypad_mobile.jpg' },
   { id: 23, name: 'Washing Machine', category: 'E-Waste', rate: 300, unit: 'kg', image: '/scrap/washing_machine.jpg' },
-  { id: 24, name: 'Ac(2 ton)', category: 'E-Waste', rate: 150, unit: 'piece', image: '/scrap/ac(2 ton).jpg' },
-  { id: 25, name: 'Ac(1.5 ton)', category: 'E-Waste', rate: 100, unit: 'piece', image: '/scrap/ac(1.5).jpg' },
+  { id: 24, name: 'Ac(2 ton)', category: 'E-Waste', rate: 2500, unit: 'piece', image: '/scrap/ac(2 ton).jpg' },
+  { id: 25, name: 'Ac(1.5 ton)', category: 'E-Waste', rate: 2000, unit: 'piece', image: '/scrap/ac(1.5).jpg' },
   { id: 26, name: 'Ac(1 ton)', category: 'E-Waste', rate: 1500, unit: 'piece', image: '/scrap/ac(1.5).jpg' },
-  { id: 27, name: 'Refrigerator(single door)', category: 'E-Waste', rate: 200, unit: 'piece', image: '/scrap/refrigerator.jpg' },
-  { id: 28, name: 'Refrigerator(double door)', category: 'E-Waste', rate: 200, unit: 'piece', image: '/scrap/refrigerator(doubledoor).jpg' },
+  { id: 27, name: 'Refrigerator(single door)', category: 'E-Waste', rate: 500, unit: 'piece', image: '/scrap/refrigerator.jpg' },
+  { id: 28, name: 'Refrigerator(double door)', category: 'E-Waste', rate: 700, unit: 'piece', image: '/scrap/refrigerator(doubledoor).jpg' },
 
   ];
