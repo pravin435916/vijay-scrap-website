@@ -32,7 +32,7 @@ export const scrapData = [
   { id: 23, name: 'Washing Machine', category: 'E-Waste', rate: 300, unit: 'kg', image: '/scrap/washing_machine.jpg' },
   { id: 24, name: 'Ac(2 ton)', category: 'E-Waste', rate: 150, unit: 'piece', image: '/scrap/ac(2 ton).jpg' },
   { id: 25, name: 'Ac(1.5 ton)', category: 'E-Waste', rate: 100, unit: 'piece', image: '/scrap/ac(1.5).jpg' },
-  { id: 26, name: 'Ac(1 ton)', category: 'E-Waste', rate: 150, unit: 'piece', image: '/scrap/ac(1.5).jpg' },
+  { id: 26, name: 'Ac(1 ton)', category: 'E-Waste', rate: 1500, unit: 'piece', image: '/scrap/ac(1.5).jpg' },
   { id: 27, name: 'Refrigerator(single door)', category: 'E-Waste', rate: 200, unit: 'piece', image: '/scrap/refrigerator.jpg' },
   { id: 28, name: 'Refrigerator(double door)', category: 'E-Waste', rate: 200, unit: 'piece', image: '/scrap/refrigerator(doubledoor).jpg' },
 
